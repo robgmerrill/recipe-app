@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Recipe List</h1>
+
+    <!-- <button id="displayRecipesButton">Display Recipes</button>
+    <button id="toggleAllButton">Toggle All</button> -->
+
+    <div>
+      <button onclick="handlers.showRecipes()">Display Recipes</button>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+    <!-- button with onclick attribute -->
+    <div>
+      <button onclick="handlers.addRecipe()">Add Recipe</button>
+      <input id="addRecipeTextInput" type="text" />
+    </div>
+
+    <div>
+      <button onclick="handlers.changeRecipe()">Change Todo</button>
+      <input id="changeRecipePositionInput" type="number" />
+      <input id="changeRecipeTextInput" type="text" />
+    </div>
+
+    <div>
+      <button onclick="handlers.deleteRecipe()">Delete</button>
+      <input id="deleteRecipePositionInput" type="number" />
+    </div>
+
+    <div>
+      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+      <input id="toggleCompletedPositionInput" type="number" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
